@@ -80,7 +80,7 @@ The concrete children of the prey and predator classes initialize the name, the 
 
 Methods `attack()` of the concrete preys expect a Predator object as an input and calls the method which corresponds to the species of the prey. The method `preyed()` can be defined on Prey class as it is not abstract. The method can be implemented identically for Hare and Gopher classes, but Lemming class’s `preyed()` method has slightly different implementation. Therefore, it is overridden in Lemming, but not overridden in Hare and Gopher which use their parent’s implementation. Both `increase()` and `limit_check()` methods are implemented differently in each concrete prey classes. So, both methods are overridden in each 3 children classes.
 
-As attack() method is not dependent on the specie of predator but dependent on the specie of prey, it is sufficient to have these methods in predator class for each prey and no need to define for Owl, Fox, Wolf for each 9 cases. However, offspring() method is dependent on each species of predator, so it should be overridden in the 3 children classes accordingly.
+As `attack()` method is not dependent on the specie of predator but dependent on the specie of prey, it is sufficient to have these methods in predator class for each prey and no need to define for Owl, Fox, Wolf for each 9 cases. However, `offspring()` method is dependent on each species of predator, so it should be overridden in the 3 children classes accordingly.
 
 ## Testing
 
